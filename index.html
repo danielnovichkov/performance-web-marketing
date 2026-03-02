@@ -1,0 +1,1449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performance Web Marketing — ROI-Driven Digital Marketing Agency</title>
+    <meta name="description" content="Data-obsessed, ROI-focused digital marketing agency. We deliver measurable performance across paid search, programmatic, and analytics. Avg. 5.2x ROAS for e-commerce, lead gen, and DTC brands.">
+    <meta name="keywords" content="performance marketing, paid search, PPC, ROAS, Google Ads, programmatic advertising, analytics, attribution, landing page optimization, digital marketing agency">
+    <meta property="og:title" content="Performance Web Marketing — ROI-Driven Digital Marketing Agency">
+    <meta property="og:description" content="Every dollar tracked. Every result measured. Data-first performance marketing for brands doing $500K-$20M revenue.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://performancewebmarketing.com">
+    <link rel="canonical" href="https://performancewebmarketing.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* ========== RESET & BASE ========== */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            color: #1a1a2e;
+            background: #ffffff;
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        img { max-width: 100%; height: auto; display: block; }
+        a { text-decoration: none; color: inherit; transition: color 0.3s ease; }
+        ul, ol { list-style: none; }
+        button, input, textarea, select { font-family: inherit; font-size: inherit; border: none; outline: none; }
+        button { cursor: pointer; }
+
+        /* ========== CSS VARIABLES ========== */
+        :root {
+            --primary: #059669;
+            --primary-light: #34D399;
+            --primary-dark: #047857;
+            --primary-bg: #ECFDF5;
+            --accent: #F59E0B;
+            --accent-light: #FDE68A;
+            --gradient-primary: linear-gradient(135deg, #059669 0%, #0D9488 50%, #14B8A6 100%);
+            --gradient-hero: linear-gradient(135deg, #059669 0%, #0D9488 40%, #14B8A6 70%, #34D399 100%);
+            --gradient-text: linear-gradient(135deg, #059669, #14B8A6);
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+            --shadow-md: 0 4px 20px rgba(0,0,0,0.08);
+            --shadow-lg: 0 10px 40px rgba(0,0,0,0.1);
+            --shadow-glow: 0 0 40px rgba(5, 150, 105, 0.15);
+            --radius-sm: 8px;
+            --radius-md: 12px;
+            --radius-lg: 20px;
+            --radius-xl: 28px;
+            --max-width: 1200px;
+            --section-padding: 100px 0;
+        }
+
+        /* ========== UTILITY ========== */
+        .container { max-width: var(--max-width); margin: 0 auto; padding: 0 24px; }
+        .section-label {
+            display: inline-flex; align-items: center; gap: 8px;
+            font-size: 0.8rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
+            color: var(--primary); background: var(--primary-bg);
+            padding: 8px 16px; border-radius: 100px; margin-bottom: 16px;
+        }
+        .section-label::before {
+            content: ''; width: 6px; height: 6px; border-radius: 50%;
+            background: var(--primary); animation: pulse-dot 2s infinite;
+        }
+        .section-title {
+            font-family: 'Instrument Serif', serif; font-size: clamp(2rem, 4vw, 3.2rem);
+            line-height: 1.15; color: #1a1a2e; margin-bottom: 16px;
+        }
+        .section-subtitle {
+            font-size: 1.05rem; color: #64748b; max-width: 600px; line-height: 1.7;
+        }
+        .gradient-text {
+            background: var(--gradient-text); -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent; background-clip: text;
+        }
+        .btn-primary {
+            display: inline-flex; align-items: center; gap: 8px;
+            padding: 14px 28px; background: var(--gradient-primary); color: #fff;
+            font-weight: 600; font-size: 0.95rem; border-radius: var(--radius-sm);
+            transition: all 0.3s ease; border: none; cursor: pointer;
+            box-shadow: 0 4px 15px rgba(5, 150, 105, 0.3);
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(5, 150, 105, 0.4);
+        }
+        .btn-secondary {
+            display: inline-flex; align-items: center; gap: 8px;
+            padding: 14px 28px; background: #fff; color: #1a1a2e;
+            font-weight: 600; font-size: 0.95rem; border-radius: var(--radius-sm);
+            border: 1.5px solid #e2e8f0; transition: all 0.3s ease;
+        }
+        .btn-secondary:hover {
+            border-color: var(--primary); color: var(--primary);
+            transform: translateY(-2px); box-shadow: var(--shadow-md);
+        }
+
+        /* ========== ANIMATIONS ========== */
+        @keyframes pulse-dot {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.4; }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(-20px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        .animate-on-scroll {
+            opacity: 0; transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        .animate-on-scroll.visible {
+            opacity: 1; transform: translateY(0);
+        }
+
+        /* ========== HEADER ========== */
+        .header {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+            background: rgba(255,255,255,0.92); backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(0,0,0,0.06);
+            transition: all 0.3s ease;
+        }
+        .header.scrolled {
+            box-shadow: var(--shadow-sm);
+        }
+        .header-inner {
+            display: flex; align-items: center; justify-content: space-between;
+            height: 72px; max-width: var(--max-width); margin: 0 auto; padding: 0 24px;
+        }
+        .logo { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 1.1rem; }
+        .logo-mark {
+            width: 36px; height: 36px; background: var(--gradient-primary);
+            border-radius: var(--radius-sm); display: flex; align-items: center;
+            justify-content: center; color: #fff; font-weight: 800; font-size: 1.1rem;
+        }
+        .logo-text span { color: var(--primary); }
+        .nav { display: flex; align-items: center; gap: 32px; }
+        .nav a {
+            font-size: 0.9rem; font-weight: 500; color: #64748b;
+            transition: color 0.3s ease; position: relative;
+        }
+        .nav a:hover { color: var(--primary); }
+        .nav a::after {
+            content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px;
+            background: var(--primary); transition: width 0.3s ease;
+        }
+        .nav a:hover::after { width: 100%; }
+        .header-cta {
+            padding: 10px 20px; background: var(--gradient-primary); color: #fff;
+            font-weight: 600; font-size: 0.85rem; border-radius: var(--radius-sm);
+            transition: all 0.3s ease;
+        }
+        .header-cta:hover { transform: translateY(-1px); box-shadow: 0 4px 15px rgba(5, 150, 105, 0.3); }
+        .mobile-toggle { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 4px; }
+        .mobile-toggle span { width: 22px; height: 2px; background: #1a1a2e; border-radius: 2px; transition: all 0.3s ease; }
+        .mobile-menu {
+            display: none; position: fixed; top: 72px; left: 0; right: 0; bottom: 0;
+            background: #fff; padding: 24px; z-index: 999; flex-direction: column; gap: 0;
+        }
+        .mobile-menu.active { display: flex; }
+        .mobile-menu a {
+            padding: 16px 0; font-size: 1.1rem; font-weight: 500; color: #1a1a2e;
+            border-bottom: 1px solid #f1f5f9;
+        }
+
+        /* ========== HERO ========== */
+        .hero {
+            padding: 160px 0 100px; position: relative; overflow: hidden;
+            background: linear-gradient(180deg, var(--primary-bg) 0%, #fff 100%);
+        }
+        .hero::before {
+            content: ''; position: absolute; top: -200px; right: -200px;
+            width: 600px; height: 600px; border-radius: 50%;
+            background: radial-gradient(circle, rgba(5, 150, 105, 0.08) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        .hero::after {
+            content: ''; position: absolute; bottom: -100px; left: -100px;
+            width: 400px; height: 400px; border-radius: 50%;
+            background: radial-gradient(circle, rgba(20, 184, 166, 0.06) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        .hero .container { position: relative; z-index: 1; text-align: center; max-width: 900px; }
+        .hero-badge {
+            display: inline-flex; align-items: center; gap: 8px;
+            background: #fff; border: 1px solid #e2e8f0; padding: 8px 16px;
+            border-radius: 100px; font-size: 0.82rem; font-weight: 500;
+            color: #64748b; margin-bottom: 32px; box-shadow: var(--shadow-sm);
+        }
+        .hero-badge .dot {
+            width: 7px; height: 7px; border-radius: 50%; background: var(--primary);
+            animation: pulse-dot 2s infinite;
+        }
+        .hero h1 {
+            font-family: 'Instrument Serif', serif;
+            font-size: clamp(2.8rem, 6vw, 4.5rem); line-height: 1.1;
+            margin-bottom: 24px; color: #1a1a2e;
+        }
+        .hero h1 .gradient {
+            background: var(--gradient-hero); -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent; background-clip: text;
+        }
+        .hero-subtitle {
+            font-size: 1.15rem; color: #64748b; max-width: 640px;
+            margin: 0 auto 40px; line-height: 1.7;
+        }
+        .hero-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 48px; }
+        .hero-trust {
+            display: flex; gap: 32px; justify-content: center; flex-wrap: wrap;
+            padding-top: 32px; border-top: 1px solid #e2e8f0;
+        }
+        .hero-trust-item {
+            display: flex; align-items: center; gap: 8px;
+            font-size: 0.85rem; color: #64748b; font-weight: 500;
+        }
+        .hero-trust-item svg { color: var(--primary); flex-shrink: 0; }
+
+        /* ========== STATS ========== */
+        .stats {
+            padding: 80px 0; background: #fff;
+            border-top: 1px solid #f1f5f9; border-bottom: 1px solid #f1f5f9;
+        }
+        .stats-grid {
+            display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px;
+        }
+        .stat-card { text-align: center; padding: 24px; }
+        .stat-number {
+            font-family: 'Instrument Serif', serif; font-size: clamp(2.2rem, 4vw, 3rem);
+            background: var(--gradient-text); -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent; background-clip: text;
+            margin-bottom: 4px; line-height: 1.2;
+        }
+        .stat-label { font-size: 0.9rem; color: #64748b; font-weight: 500; }
+
+        /* ========== SERVICES ========== */
+        .services { padding: var(--section-padding); background: #fafbfc; }
+        .services-header { text-align: center; margin-bottom: 60px; }
+        .services-header .section-subtitle { margin: 0 auto; }
+        .services-grid {
+            display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+        }
+        .service-card {
+            background: #fff; border-radius: var(--radius-lg); padding: 36px;
+            border: 1px solid #f1f5f9; transition: all 0.4s ease;
+            position: relative; overflow: hidden;
+        }
+        .service-card::before {
+            content: ''; position: absolute; top: 0; left: 0; right: 0;
+            height: 3px; background: var(--gradient-primary);
+            transform: scaleX(0); transform-origin: left;
+            transition: transform 0.4s ease;
+        }
+        .service-card:hover::before { transform: scaleX(1); }
+        .service-card:hover {
+            transform: translateY(-4px); box-shadow: var(--shadow-lg);
+            border-color: transparent;
+        }
+        .service-icon {
+            width: 52px; height: 52px; border-radius: var(--radius-md);
+            background: var(--primary-bg); display: flex; align-items: center;
+            justify-content: center; margin-bottom: 20px; color: var(--primary);
+        }
+        .service-card h3 { font-size: 1.15rem; font-weight: 700; margin-bottom: 10px; }
+        .service-card p { font-size: 0.92rem; color: #64748b; line-height: 1.6; margin-bottom: 16px; }
+        .service-price {
+            font-size: 0.85rem; font-weight: 600; color: var(--primary);
+            display: flex; align-items: center; gap: 4px;
+        }
+
+        /* ========== CTA BANNER ========== */
+        .cta-banner {
+            padding: 80px 0;
+            background: var(--gradient-primary);
+            position: relative; overflow: hidden;
+        }
+        .cta-banner::before {
+            content: ''; position: absolute; top: -50%; right: -20%;
+            width: 500px; height: 500px; border-radius: 50%;
+            background: rgba(255,255,255,0.05); pointer-events: none;
+        }
+        .cta-banner .container {
+            position: relative; z-index: 1; text-align: center;
+        }
+        .cta-banner h2 {
+            font-family: 'Instrument Serif', serif; font-size: clamp(2rem, 4vw, 2.8rem);
+            color: #fff; margin-bottom: 16px;
+        }
+        .cta-banner p { color: rgba(255,255,255,0.85); font-size: 1.1rem; margin-bottom: 32px; max-width: 550px; margin-left: auto; margin-right: auto; }
+        .cta-banner .btn-white {
+            display: inline-flex; align-items: center; gap: 8px;
+            padding: 14px 28px; background: #fff; color: var(--primary-dark);
+            font-weight: 700; font-size: 0.95rem; border-radius: var(--radius-sm);
+            transition: all 0.3s ease; border: none;
+        }
+        .cta-banner .btn-white:hover {
+            transform: translateY(-2px); box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+        }
+
+        /* ========== CASE STUDIES ========== */
+        .cases { padding: var(--section-padding); background: #fff; }
+        .cases-header { text-align: center; margin-bottom: 60px; }
+        .cases-header .section-subtitle { margin: 0 auto; }
+        .cases-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+        .case-card {
+            background: #fafbfc; border-radius: var(--radius-lg);
+            overflow: hidden; border: 1px solid #f1f5f9;
+            transition: all 0.4s ease;
+        }
+        .case-card:hover {
+            transform: translateY(-4px); box-shadow: var(--shadow-lg);
+            border-color: transparent;
+        }
+        .case-image {
+            height: 200px; position: relative; overflow: hidden;
+        }
+        .case-image-bg {
+            width: 100%; height: 100%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 3rem; font-weight: 800; color: rgba(255,255,255,0.3);
+        }
+        .case-image-bg.bg-1 { background: linear-gradient(135deg, #059669, #14B8A6); }
+        .case-image-bg.bg-2 { background: linear-gradient(135deg, #0D9488, #06B6D4); }
+        .case-image-bg.bg-3 { background: linear-gradient(135deg, #047857, #059669); }
+        .case-tag {
+            position: absolute; top: 16px; left: 16px;
+            background: rgba(255,255,255,0.95); padding: 4px 12px;
+            border-radius: 100px; font-size: 0.75rem; font-weight: 600; color: #1a1a2e;
+        }
+        .case-metric {
+            position: absolute; bottom: 16px; right: 16px;
+            background: var(--accent); padding: 6px 14px; border-radius: 100px;
+            font-size: 0.85rem; font-weight: 700; color: #1a1a2e;
+        }
+        .case-content { padding: 28px; }
+        .case-content h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 8px; }
+        .case-content p { font-size: 0.9rem; color: #64748b; line-height: 1.6; margin-bottom: 16px; }
+        .case-stats { display: flex; gap: 24px; }
+        .case-stat-item { font-size: 0.8rem; color: #94a3b8; }
+        .case-stat-item strong { color: #1a1a2e; display: block; font-size: 1.1rem; }
+
+        /* ========== PROCESS ========== */
+        .process { padding: var(--section-padding); background: #fafbfc; }
+        .process-header { text-align: center; margin-bottom: 60px; }
+        .process-header .section-subtitle { margin: 0 auto; }
+        .process-steps { max-width: 800px; margin: 0 auto; }
+        .process-step {
+            display: flex; gap: 32px; padding: 32px 0;
+            border-bottom: 1px solid #e2e8f0; position: relative;
+        }
+        .process-step:last-child { border-bottom: none; }
+        .step-number {
+            width: 48px; height: 48px; border-radius: 50%; flex-shrink: 0;
+            background: var(--gradient-primary); color: #fff;
+            display: flex; align-items: center; justify-content: center;
+            font-weight: 700; font-size: 1rem;
+        }
+        .step-content h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 6px; }
+        .step-content p { font-size: 0.92rem; color: #64748b; line-height: 1.6; }
+
+        /* ========== PRICING ========== */
+        .pricing { padding: var(--section-padding); background: #fff; }
+        .pricing-header { text-align: center; margin-bottom: 60px; }
+        .pricing-header .section-subtitle { margin: 0 auto; }
+        .pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; max-width: 1000px; margin: 0 auto; }
+        .pricing-card {
+            background: #fff; border-radius: var(--radius-lg); padding: 40px 32px;
+            border: 1.5px solid #e2e8f0; text-align: center; transition: all 0.4s ease;
+            position: relative;
+        }
+        .pricing-card:hover {
+            transform: translateY(-4px); box-shadow: var(--shadow-lg); border-color: transparent;
+        }
+        .pricing-card.featured {
+            border-color: var(--primary); background: var(--primary-bg);
+            box-shadow: var(--shadow-glow);
+        }
+        .pricing-card.featured::before {
+            content: 'Most Popular'; position: absolute; top: -12px; left: 50%;
+            transform: translateX(-50%); background: var(--gradient-primary); color: #fff;
+            padding: 4px 16px; border-radius: 100px; font-size: 0.75rem; font-weight: 700;
+        }
+        .pricing-name { font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: #64748b; margin-bottom: 12px; }
+        .pricing-price { font-family: 'Instrument Serif', serif; font-size: 2.8rem; margin-bottom: 4px; color: #1a1a2e; }
+        .pricing-period { font-size: 0.85rem; color: #94a3b8; margin-bottom: 24px; }
+        .pricing-features { text-align: left; margin-bottom: 32px; }
+        .pricing-features li {
+            padding: 8px 0; font-size: 0.9rem; color: #475569;
+            display: flex; align-items: flex-start; gap: 10px;
+        }
+        .pricing-features li::before {
+            content: ''; width: 18px; height: 18px; flex-shrink: 0; margin-top: 2px;
+            background: var(--primary-bg); border-radius: 50%;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23059669'%3E%3Cpath d='M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z'/%3E%3C/svg%3E");
+            background-size: 12px; background-position: center; background-repeat: no-repeat;
+        }
+        .pricing-card .btn-primary { width: 100%; justify-content: center; }
+        .pricing-card .btn-secondary { width: 100%; justify-content: center; }
+
+        /* ========== TESTIMONIALS ========== */
+        .testimonials { padding: var(--section-padding); background: #fafbfc; }
+        .testimonials-header { text-align: center; margin-bottom: 60px; }
+        .testimonials-header .section-subtitle { margin: 0 auto; }
+        .testimonials-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+        .testimonial-card {
+            background: #fff; border-radius: var(--radius-lg); padding: 36px;
+            border: 1px solid #f1f5f9; transition: all 0.4s ease;
+        }
+        .testimonial-card:hover {
+            transform: translateY(-2px); box-shadow: var(--shadow-md); border-color: transparent;
+        }
+        .testimonial-stars { display: flex; gap: 2px; margin-bottom: 16px; }
+        .testimonial-stars svg { color: var(--accent); }
+        .testimonial-text { font-size: 0.95rem; color: #475569; line-height: 1.7; margin-bottom: 24px; font-style: italic; }
+        .testimonial-author { display: flex; align-items: center; gap: 12px; }
+        .testimonial-avatar {
+            width: 44px; height: 44px; border-radius: 50%;
+            background: var(--gradient-primary); display: flex; align-items: center;
+            justify-content: center; color: #fff; font-weight: 700; font-size: 0.9rem;
+        }
+        .testimonial-name { font-weight: 600; font-size: 0.9rem; }
+        .testimonial-role { font-size: 0.8rem; color: #94a3b8; }
+
+        /* ========== RESOURCES ========== */
+        .resources { padding: var(--section-padding); background: #fff; }
+        .resources-header { text-align: center; margin-bottom: 60px; }
+        .resources-header .section-subtitle { margin: 0 auto; }
+        .resources-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+        .resource-card {
+            background: #fafbfc; border-radius: var(--radius-lg); overflow: hidden;
+            border: 1px solid #f1f5f9; transition: all 0.4s ease;
+        }
+        .resource-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: transparent; }
+        .resource-thumb {
+            height: 160px; display: flex; align-items: center; justify-content: center;
+            font-size: 2.5rem; font-weight: 800; color: rgba(255,255,255,0.25);
+        }
+        .resource-thumb.rt-1 { background: linear-gradient(135deg, #059669, #0D9488); }
+        .resource-thumb.rt-2 { background: linear-gradient(135deg, #0D9488, #14B8A6); }
+        .resource-thumb.rt-3 { background: linear-gradient(135deg, #047857, #059669); }
+        .resource-body { padding: 24px; }
+        .resource-tag { font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--primary); margin-bottom: 8px; }
+        .resource-body h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 8px; line-height: 1.4; }
+        .resource-body p { font-size: 0.85rem; color: #64748b; line-height: 1.6; }
+
+        /* ========== TEAM ========== */
+        .team { padding: var(--section-padding); background: #fafbfc; }
+        .team-header { text-align: center; margin-bottom: 60px; }
+        .team-header .section-subtitle { margin: 0 auto; }
+        .team-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; max-width: 900px; margin: 0 auto; }
+        .team-card { text-align: center; }
+        .team-avatar {
+            width: 100px; height: 100px; border-radius: 50%; margin: 0 auto 16px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.5rem; font-weight: 700; color: #fff;
+        }
+        .team-avatar.ta-1 { background: linear-gradient(135deg, #059669, #0D9488); }
+        .team-avatar.ta-2 { background: linear-gradient(135deg, #0D9488, #14B8A6); }
+        .team-avatar.ta-3 { background: linear-gradient(135deg, #047857, #059669); }
+        .team-avatar.ta-4 { background: linear-gradient(135deg, #14B8A6, #34D399); }
+        .team-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 4px; }
+        .team-card p { font-size: 0.82rem; color: #64748b; }
+
+        /* ========== FAQ ========== */
+        .faq { padding: var(--section-padding); background: #fff; }
+        .faq-header { text-align: center; margin-bottom: 60px; }
+        .faq-header .section-subtitle { margin: 0 auto; }
+        .faq-list { max-width: 760px; margin: 0 auto; }
+        .faq-item {
+            border-bottom: 1px solid #e2e8f0; overflow: hidden;
+        }
+        .faq-question {
+            display: flex; align-items: center; justify-content: space-between;
+            padding: 20px 0; cursor: pointer; font-weight: 600; font-size: 1rem;
+            color: #1a1a2e; background: none; border: none; width: 100%;
+            text-align: left; gap: 16px;
+        }
+        .faq-question:hover { color: var(--primary); }
+        .faq-icon {
+            width: 28px; height: 28px; border-radius: 50%; background: var(--primary-bg);
+            display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+            transition: transform 0.3s ease; color: var(--primary);
+        }
+        .faq-item.active .faq-icon { transform: rotate(45deg); }
+        .faq-answer {
+            max-height: 0; overflow: hidden; transition: max-height 0.4s ease, padding 0.4s ease;
+        }
+        .faq-answer-inner {
+            padding-bottom: 20px; font-size: 0.92rem; color: #64748b; line-height: 1.7;
+        }
+        .faq-item.active .faq-answer { max-height: 300px; }
+
+        /* ========== AUDIT FORM ========== */
+        .audit {
+            padding: var(--section-padding);
+            background: linear-gradient(180deg, var(--primary-bg) 0%, #fff 100%);
+        }
+        .audit-inner {
+            max-width: 700px; margin: 0 auto; text-align: center;
+        }
+        .audit-inner .section-title { margin-bottom: 12px; }
+        .audit-inner .section-subtitle { margin: 0 auto 40px; }
+        .audit-form {
+            background: #fff; border-radius: var(--radius-lg); padding: 40px;
+            box-shadow: var(--shadow-md); border: 1px solid #f1f5f9;
+            text-align: left;
+        }
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+        .form-group { margin-bottom: 16px; }
+        .form-group:last-of-type { margin-bottom: 24px; }
+        .form-label { display: block; font-size: 0.85rem; font-weight: 600; color: #1a1a2e; margin-bottom: 6px; }
+        .form-input, .form-select, .form-textarea {
+            width: 100%; padding: 12px 16px; border: 1.5px solid #e2e8f0;
+            border-radius: var(--radius-sm); font-size: 0.92rem; color: #1a1a2e;
+            background: #fff; transition: all 0.3s ease;
+        }
+        .form-input:focus, .form-select:focus, .form-textarea:focus {
+            border-color: var(--primary); box-shadow: 0 0 0 3px rgba(5, 150, 105, 0.1);
+        }
+        .form-textarea { resize: vertical; min-height: 100px; }
+        .form-input::placeholder, .form-textarea::placeholder { color: #94a3b8; }
+        .audit-form .btn-primary { width: 100%; justify-content: center; padding: 16px; font-size: 1rem; }
+        .form-note { text-align: center; margin-top: 12px; font-size: 0.8rem; color: #94a3b8; }
+
+        /* ========== FOOTER ========== */
+        .footer { background: #0f172a; color: #cbd5e1; padding: 80px 0 0; }
+        .footer-grid {
+            display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 48px;
+            padding-bottom: 60px; border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+        .footer-brand .footer-logo { display: flex; align-items: center; gap: 10px; margin-bottom: 16px; }
+        .footer-logo-mark {
+            width: 36px; height: 36px; background: var(--gradient-primary);
+            border-radius: var(--radius-sm); display: flex; align-items: center;
+            justify-content: center; color: #fff; font-weight: 800; font-size: 1.1rem;
+        }
+        .footer-logo-text { color: #fff; font-weight: 700; font-size: 1.05rem; }
+        .footer-brand p { font-size: 0.88rem; line-height: 1.7; margin-bottom: 20px; color: #94a3b8; }
+        .footer-social { display: flex; gap: 12px; }
+        .footer-social a {
+            width: 36px; height: 36px; border-radius: 50%;
+            background: rgba(255,255,255,0.06); display: flex; align-items: center;
+            justify-content: center; color: #94a3b8; transition: all 0.3s ease;
+        }
+        .footer-social a:hover { background: var(--primary); color: #fff; }
+        .footer-col h4 { color: #fff; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 20px; }
+        .footer-col a { display: block; font-size: 0.88rem; color: #94a3b8; padding: 6px 0; transition: color 0.3s ease; }
+        .footer-col a:hover { color: var(--primary-light); }
+        .footer-contact-item { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 12px; font-size: 0.88rem; color: #94a3b8; }
+        .footer-contact-item svg { color: var(--primary-light); flex-shrink: 0; margin-top: 2px; }
+        .footer-bottom {
+            display: flex; align-items: center; justify-content: space-between;
+            padding: 24px 0; font-size: 0.82rem; color: #64748b;
+        }
+        .footer-legal { display: flex; gap: 24px; }
+        .footer-legal a { color: #64748b; transition: color 0.3s ease; }
+        .footer-legal a:hover { color: #94a3b8; }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 1024px) {
+            .services-grid { grid-template-columns: repeat(2, 1fr); }
+            .cases-grid { grid-template-columns: repeat(2, 1fr); }
+            .cases-grid .case-card:last-child { grid-column: 1 / -1; max-width: 500px; margin: 0 auto; }
+            .team-grid { grid-template-columns: repeat(2, 1fr); }
+            .footer-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 768px) {
+            :root { --section-padding: 70px 0; }
+            .nav { display: none; }
+            .header-cta { display: none; }
+            .mobile-toggle { display: flex; }
+            .hero { padding: 130px 0 70px; }
+            .hero h1 { font-size: clamp(2.2rem, 8vw, 3rem); }
+            .hero-subtitle { font-size: 1rem; }
+            .hero-trust { gap: 20px; }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+            .services-grid { grid-template-columns: 1fr; }
+            .cases-grid { grid-template-columns: 1fr; }
+            .cases-grid .case-card:last-child { max-width: 100%; }
+            .pricing-grid { grid-template-columns: 1fr; max-width: 400px; }
+            .testimonials-grid { grid-template-columns: 1fr; }
+            .resources-grid { grid-template-columns: 1fr; }
+            .team-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+            .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+            .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
+            .form-row { grid-template-columns: 1fr; }
+            .audit-form { padding: 28px 20px; }
+        }
+        @media (max-width: 480px) {
+            .hero-buttons { flex-direction: column; align-items: center; }
+            .hero-buttons .btn-primary, .hero-buttons .btn-secondary { width: 100%; justify-content: center; }
+            .hero-trust { flex-direction: column; align-items: center; }
+            .stats-grid { grid-template-columns: 1fr; }
+            .team-grid { grid-template-columns: 1fr; }
+            .footer-legal { flex-direction: column; gap: 8px; align-items: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ========== HEADER ========== -->
+    <header class="header" id="header">
+        <div class="header-inner">
+            <a href="#" class="logo">
+                <div class="logo-mark">P</div>
+                <div class="logo-text">Performance<span>WM</span></div>
+            </a>
+            <nav class="nav">
+                <a href="#services">Services</a>
+                <a href="#cases">Case Studies</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#team">Team</a>
+                <a href="#faq">FAQ</a>
+            </nav>
+            <a href="#audit" class="header-cta">Free Performance Audit</a>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#services" onclick="closeMobile()">Services</a>
+            <a href="#cases" onclick="closeMobile()">Case Studies</a>
+            <a href="#pricing" onclick="closeMobile()">Pricing</a>
+            <a href="#team" onclick="closeMobile()">Team</a>
+            <a href="#faq" onclick="closeMobile()">FAQ</a>
+            <a href="#audit" onclick="closeMobile()">Free Performance Audit</a>
+        </div>
+    </header>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-badge">
+                <span class="dot"></span>
+                Now accepting new performance partners
+            </div>
+            <h1>Every dollar tracked.<br>Every result <span class="gradient">measured.</span></h1>
+            <p class="hero-subtitle">We're a data-first performance marketing agency for e-commerce, lead gen, and DTC brands doing $500K&ndash;$20M in revenue. No vanity metrics. Only ROI you can take to the bank.</p>
+            <div class="hero-buttons">
+                <a href="#audit" class="btn-primary">
+                    Get Your Free Audit
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#cases" class="btn-secondary">
+                    See Our Results
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+                </a>
+            </div>
+            <div class="hero-trust">
+                <div class="hero-trust-item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    Google Premier Partner
+                </div>
+                <div class="hero-trust-item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" stroke="none"/><path d="M22 4L12 14.01l-3-3" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    150+ campaigns optimized
+                </div>
+                <div class="hero-trust-item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20V10M18 20V4M6 20v-4"/></svg>
+                    Avg. 5.2x ROAS
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== STATS ========== -->
+    <section class="stats" id="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card animate-on-scroll">
+                    <div class="stat-number">12+</div>
+                    <div class="stat-label">Years of Experience</div>
+                </div>
+                <div class="stat-card animate-on-scroll">
+                    <div class="stat-number">150+</div>
+                    <div class="stat-label">Campaigns Optimized</div>
+                </div>
+                <div class="stat-card animate-on-scroll">
+                    <div class="stat-number">5.2x</div>
+                    <div class="stat-label">Avg. ROAS</div>
+                </div>
+                <div class="stat-card animate-on-scroll">
+                    <div class="stat-number">$28M+</div>
+                    <div class="stat-label">Revenue Generated</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SERVICES ========== -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="services-header">
+                <div class="section-label">Services</div>
+                <h2 class="section-title">Performance channels that <span class="gradient-text">move the needle</span></h2>
+                <p class="section-subtitle">We focus exclusively on what drives measurable ROI. Every campaign is built on data, optimized by algorithms, and validated by real business outcomes.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+                    </div>
+                    <h3>Paid Search (Google/Bing)</h3>
+                    <p>Precision keyword targeting, bid automation, and ad copy testing to capture high-intent traffic. We squeeze maximum revenue from every click.</p>
+                    <div class="service-price">From $800/mo</div>
+                </div>
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                    </div>
+                    <h3>Programmatic & Display</h3>
+                    <p>AI-powered audience targeting across premium inventory. Retargeting, prospecting, and connected TV campaigns that scale profitably.</p>
+                    <div class="service-price">From $1,200/mo</div>
+                </div>
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18M16 10a4 4 0 0 1-8 0"/></svg>
+                    </div>
+                    <h3>Shopping & Feed Management</h3>
+                    <p>Google Shopping, Performance Max, and merchant feed optimization. Structured data, dynamic pricing feeds, and competitive benchmarking.</p>
+                    <div class="service-price">From $600/mo</div>
+                </div>
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20V10M18 20V4M6 20v-4"/></svg>
+                    </div>
+                    <h3>Analytics & Attribution</h3>
+                    <p>GA4 setup, server-side tracking, multi-touch attribution modeling, and custom dashboards. Know exactly what drives your revenue.</p>
+                    <div class="service-price">From $1,500/project</div>
+                </div>
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+                    </div>
+                    <h3>Landing Page Optimization</h3>
+                    <p>A/B testing, conversion rate optimization, and page speed improvements. Turn more clicks into customers with data-backed design decisions.</p>
+                    <div class="service-price">From $900/project</div>
+                </div>
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                    </div>
+                    <h3>Full-Funnel Strategy</h3>
+                    <p>End-to-end performance strategy across all paid channels. Budget allocation, audience segmentation, creative strategy, and unified reporting.</p>
+                    <div class="service-price">From $2,000/mo</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CTA BANNER ========== -->
+    <section class="cta-banner">
+        <div class="container">
+            <h2>Stop guessing. Start measuring.</h2>
+            <p>Get a complimentary performance audit and discover exactly where your ad spend is leaking revenue.</p>
+            <a href="#audit" class="btn-white">
+                Claim Your Free Audit
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- ========== CASE STUDIES ========== -->
+    <section class="cases" id="cases">
+        <div class="container">
+            <div class="cases-header">
+                <div class="section-label">Case Studies</div>
+                <h2 class="section-title">Results that <span class="gradient-text">speak for themselves</span></h2>
+                <p class="section-subtitle">Real campaigns. Real numbers. Every case study is backed by verified data from our analytics platforms.</p>
+            </div>
+            <div class="cases-grid">
+                <div class="case-card animate-on-scroll">
+                    <div class="case-image">
+                        <div class="case-image-bg bg-1">ROAS</div>
+                        <span class="case-tag">E-Commerce / DTC</span>
+                        <span class="case-metric">+520% ROAS</span>
+                    </div>
+                    <div class="case-content">
+                        <h3>DTC Supplements Brand</h3>
+                        <p>Rebuilt Google Ads structure from scratch, implemented Performance Max with custom audience signals, and optimized product feed for 800+ SKUs.</p>
+                        <div class="case-stats">
+                            <div class="case-stat-item">
+                                <strong>5.2x</strong> ROAS
+                            </div>
+                            <div class="case-stat-item">
+                                <strong>4 mo</strong> Timeline
+                            </div>
+                            <div class="case-stat-item">
+                                <strong>-38%</strong> CPA
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="case-card animate-on-scroll">
+                    <div class="case-image">
+                        <div class="case-image-bg bg-2">CPL</div>
+                        <span class="case-tag">Lead Gen / SaaS</span>
+                        <span class="case-metric">$12 to $4.80 CPL</span>
+                    </div>
+                    <div class="case-content">
+                        <h3>HR Tech Platform</h3>
+                        <p>Overhauled paid search account, deployed conversion-optimized landing pages, and set up multi-touch attribution to identify top-performing channels.</p>
+                        <div class="case-stats">
+                            <div class="case-stat-item">
+                                <strong>-60%</strong> CPL
+                            </div>
+                            <div class="case-stat-item">
+                                <strong>3.8x</strong> Lead Volume
+                            </div>
+                            <div class="case-stat-item">
+                                <strong>6 mo</strong> Timeline
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="case-card animate-on-scroll">
+                    <div class="case-image">
+                        <div class="case-image-bg bg-3">OOH</div>
+                        <span class="case-tag">Retail / Programmatic</span>
+                        <span class="case-metric">+340% Foot Traffic</span>
+                    </div>
+                    <div class="case-content">
+                        <h3>Regional Retail Chain</h3>
+                        <p>Launched programmatic display and connected TV campaign targeting geo-fenced audiences within 15-mile radius of 12 store locations.</p>
+                        <div class="case-stats">
+                            <div class="case-stat-item">
+                                <strong>3.2M</strong> Impressions
+                            </div>
+                            <div class="case-stat-item">
+                                <strong>+340%</strong> Foot Traffic
+                            </div>
+                            <div class="case-stat-item">
+                                <strong>$0.82</strong> CPM
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PROCESS ========== -->
+    <section class="process" id="process">
+        <div class="container">
+            <div class="process-header">
+                <div class="section-label">Our Process</div>
+                <h2 class="section-title">How we deliver <span class="gradient-text">predictable growth</span></h2>
+                <p class="section-subtitle">A systematic, data-driven methodology refined across 150+ campaigns. No guesswork, just process.</p>
+            </div>
+            <div class="process-steps">
+                <div class="process-step animate-on-scroll">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Deep-Dive Audit</h3>
+                        <p>We dissect your current ad accounts, analytics setup, and conversion funnel. Every wasted dollar is identified. Every opportunity is documented.</p>
+                    </div>
+                </div>
+                <div class="process-step animate-on-scroll">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Strategy & Forecasting</h3>
+                        <p>Using your historical data and competitive intelligence, we build a performance model with clear KPIs, budget allocation, and projected ROI.</p>
+                    </div>
+                </div>
+                <div class="process-step animate-on-scroll">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Build & Launch</h3>
+                        <p>Campaign architecture, tracking implementation, ad copy and creative development, landing page setup. Everything built for measurement from day one.</p>
+                    </div>
+                </div>
+                <div class="process-step animate-on-scroll">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>Optimize & Scale</h3>
+                        <p>Weekly optimizations, A/B tests, bid adjustments, and budget reallocation. Monthly strategy reviews with transparent reporting on every metric that matters.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PRICING ========== -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="pricing-header">
+                <div class="section-label">Pricing</div>
+                <h2 class="section-title">Transparent pricing, <span class="gradient-text">measurable returns</span></h2>
+                <p class="section-subtitle">Choose the plan that fits your growth stage. All plans include full transparency reporting and dedicated account management.</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card animate-on-scroll">
+                    <div class="pricing-name">Starter</div>
+                    <div class="pricing-price">$600</div>
+                    <div class="pricing-period">per month</div>
+                    <ul class="pricing-features">
+                        <li>1 advertising platform</li>
+                        <li>Up to $5K monthly ad spend</li>
+                        <li>Bi-weekly optimization</li>
+                        <li>Monthly performance report</li>
+                        <li>Basic conversion tracking</li>
+                        <li>Email support</li>
+                    </ul>
+                    <a href="#audit" class="btn-secondary">Get Started</a>
+                </div>
+                <div class="pricing-card featured animate-on-scroll">
+                    <div class="pricing-name">Performance</div>
+                    <div class="pricing-price">$1,500</div>
+                    <div class="pricing-period">per month</div>
+                    <ul class="pricing-features">
+                        <li>Up to 3 advertising platforms</li>
+                        <li>Up to $25K monthly ad spend</li>
+                        <li>Weekly optimization cycles</li>
+                        <li>Custom analytics dashboard</li>
+                        <li>A/B testing & CRO</li>
+                        <li>Bi-weekly strategy calls</li>
+                        <li>Multi-touch attribution</li>
+                    </ul>
+                    <a href="#audit" class="btn-primary">Get Started</a>
+                </div>
+                <div class="pricing-card animate-on-scroll">
+                    <div class="pricing-name">Enterprise</div>
+                    <div class="pricing-price">$3,500</div>
+                    <div class="pricing-period">per month</div>
+                    <ul class="pricing-features">
+                        <li>Unlimited platforms</li>
+                        <li>$25K+ monthly ad spend</li>
+                        <li>Daily monitoring & optimization</li>
+                        <li>Advanced attribution modeling</li>
+                        <li>Landing page optimization</li>
+                        <li>Dedicated performance director</li>
+                        <li>Executive-level reporting</li>
+                        <li>Quarterly business reviews</li>
+                    </ul>
+                    <a href="#audit" class="btn-secondary">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== TESTIMONIALS ========== -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="testimonials-header">
+                <div class="section-label">Testimonials</div>
+                <h2 class="section-title">What our <span class="gradient-text">partners say</span></h2>
+                <p class="section-subtitle">We let our clients' results do the talking. Here is what they have to say about working with us.</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card animate-on-scroll">
+                    <div class="testimonial-stars">
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <p class="testimonial-text">"PWM completely transformed our Google Ads performance. We went from burning cash on broad match keywords to a lean, mean ROAS machine. Our revenue tripled in six months and we actually spend less on ads now."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">JW</div>
+                        <div>
+                            <div class="testimonial-name">Jason Whitfield</div>
+                            <div class="testimonial-role">CEO, NovaBright Supplements</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card animate-on-scroll">
+                    <div class="testimonial-stars">
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <p class="testimonial-text">"The analytics setup alone was worth the engagement. We finally understand which channels actually drive pipeline, not just clicks. Their attribution modeling saved us from killing our best-performing campaign."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">MR</div>
+                        <div>
+                            <div class="testimonial-name">Michelle Reyes</div>
+                            <div class="testimonial-role">VP Marketing, TalentSync HR</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card animate-on-scroll">
+                    <div class="testimonial-stars">
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <p class="testimonial-text">"Other agencies showed us impressions and clicks. PWM showed us profit. They restructured our entire Shopping campaign and within three months we were profitable on a channel we had written off."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">BT</div>
+                        <div>
+                            <div class="testimonial-name">Brian Torres</div>
+                            <div class="testimonial-role">Founder, Greystone Outfitters</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card animate-on-scroll">
+                    <div class="testimonial-stars">
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <p class="testimonial-text">"We switched to PWM after two agencies failed to deliver. Within 60 days, our cost per acquisition dropped 45% and lead quality went through the roof. Their weekly reports are the most detailed I have ever seen."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">KN</div>
+                        <div>
+                            <div class="testimonial-name">Karen Nakamura</div>
+                            <div class="testimonial-role">CMO, Vaultline Fintech</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== RESOURCES ========== -->
+    <section class="resources" id="resources">
+        <div class="container">
+            <div class="resources-header">
+                <div class="section-label">Resources</div>
+                <h2 class="section-title">Performance marketing <span class="gradient-text">insights</span></h2>
+                <p class="section-subtitle">Actionable guides, frameworks, and data-backed strategies from our team.</p>
+            </div>
+            <div class="resources-grid">
+                <div class="resource-card animate-on-scroll">
+                    <div class="resource-thumb rt-1">ROAS</div>
+                    <div class="resource-body">
+                        <div class="resource-tag">Guide</div>
+                        <h3>The 2026 Google Ads Playbook for E-Commerce Brands</h3>
+                        <p>Everything you need to know about Performance Max, Smart Bidding, and feed optimization for maximum ROAS.</p>
+                    </div>
+                </div>
+                <div class="resource-card animate-on-scroll">
+                    <div class="resource-thumb rt-2">GA4</div>
+                    <div class="resource-body">
+                        <div class="resource-tag">Framework</div>
+                        <h3>Multi-Touch Attribution: Beyond Last Click</h3>
+                        <p>How to set up data-driven attribution in GA4 and actually understand which touchpoints drive revenue.</p>
+                    </div>
+                </div>
+                <div class="resource-card animate-on-scroll">
+                    <div class="resource-thumb rt-3">CRO</div>
+                    <div class="resource-body">
+                        <div class="resource-tag">Case Study</div>
+                        <h3>How We Cut CPL by 60% for a B2B SaaS</h3>
+                        <p>A step-by-step breakdown of the landing page and campaign changes that transformed lead generation costs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== TEAM ========== -->
+    <section class="team" id="team">
+        <div class="container">
+            <div class="team-header">
+                <div class="section-label">Team</div>
+                <h2 class="section-title">Performance <span class="gradient-text">experts</span></h2>
+                <p class="section-subtitle">A tight-knit team of specialists who live and breathe paid media, data, and conversion optimization.</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-card animate-on-scroll">
+                    <div class="team-avatar ta-1">RM</div>
+                    <h3>Ryan Mitchell</h3>
+                    <p>Founder & Performance Director</p>
+                </div>
+                <div class="team-card animate-on-scroll">
+                    <div class="team-avatar ta-2">SC</div>
+                    <h3>Sarah Chen</h3>
+                    <p>Paid Media Lead</p>
+                </div>
+                <div class="team-card animate-on-scroll">
+                    <div class="team-avatar ta-3">DO</div>
+                    <h3>David Okafor</h3>
+                    <p>Analytics & Attribution</p>
+                </div>
+                <div class="team-card animate-on-scroll">
+                    <div class="team-avatar ta-4">+8</div>
+                    <h3>Specialist Network</h3>
+                    <p>CRO, Creative, Dev & More</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FAQ ========== -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="faq-header">
+                <div class="section-label">FAQ</div>
+                <h2 class="section-title">Frequently asked <span class="gradient-text">questions</span></h2>
+                <p class="section-subtitle">Everything you need to know before getting started with performance marketing.</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What kind of businesses do you work with?
+                        <span class="faq-icon">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+                        </span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">We specialize in e-commerce brands, lead generation companies, and DTC businesses doing $500K to $20M in annual revenue. Our sweet spot is companies that have proven product-market fit and are ready to scale profitably through paid channels.</div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What is your minimum ad spend requirement?
+                        <span class="faq-icon">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+                        </span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">For our Starter plan, we recommend a minimum of $3,000/month in ad spend to generate meaningful data and results. For Performance and Enterprise plans, we typically work with budgets of $10K-$100K+ per month across platforms.</div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How quickly will I see results?
+                        <span class="faq-icon">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+                        </span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">Most clients see measurable improvements within the first 30 days as we implement quick wins from the audit. Significant performance gains typically come in months 2-3 as our optimization cycles compound. We set clear 30/60/90-day benchmarks so you always know where you stand.</div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Do you require long-term contracts?
+                        <span class="faq-icon">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+                        </span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">We recommend a 3-month initial commitment to allow enough time for proper setup, testing, and optimization. After that, all engagements are month-to-month. We believe our results should earn your continued partnership, not a contract.</div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What platforms do you manage?
+                        <span class="faq-icon">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+                        </span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">We manage Google Ads (Search, Shopping, Display, YouTube, Performance Max), Microsoft/Bing Ads, programmatic platforms (DV360, The Trade Desk), Meta Ads, and LinkedIn Ads. Our core expertise is in search and programmatic, where data-driven optimization has the biggest impact.</div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What does the free performance audit include?
+                        <span class="faq-icon">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+                        </span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">Our audit covers account structure review, wasted spend analysis, keyword and audience assessment, tracking/attribution gap identification, competitor benchmarking, and a prioritized action plan with projected ROI. It is a comprehensive document you can use whether or not you work with us.</div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How do you report on performance?
+                        <span class="faq-icon">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+                        </span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">Every client gets a real-time dashboard (Looker Studio or custom) with the metrics that matter to their business. We provide weekly optimization summaries, monthly deep-dive reports, and quarterly strategic reviews. Full transparency on spend, performance, and the actions we are taking.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== AUDIT FORM ========== -->
+    <section class="audit" id="audit">
+        <div class="container">
+            <div class="audit-inner">
+                <div class="section-label">Free Audit</div>
+                <h2 class="section-title">Get your free <span class="gradient-text">performance audit</span></h2>
+                <p class="section-subtitle">Tell us about your business and current advertising. We will deliver a detailed audit with actionable recommendations within 48 hours.</p>
+                <form class="audit-form" id="auditForm" action="#" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label" for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" class="form-input" placeholder="John Smith" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="email">Work Email *</label>
+                            <input type="email" id="email" name="email" class="form-input" placeholder="john@company.com" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label" for="company">Company / Brand</label>
+                            <input type="text" id="company" name="company" class="form-input" placeholder="Your company name">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="website">Website URL</label>
+                            <input type="url" id="website" name="website" class="form-input" placeholder="https://yoursite.com">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="budget">Monthly Ad Budget *</label>
+                        <select id="budget" name="budget" class="form-select" required>
+                            <option value="" disabled selected>Select your budget range</option>
+                            <option value="under-3k">Under $3,000/mo</option>
+                            <option value="3k-10k">$3,000 - $10,000/mo</option>
+                            <option value="10k-25k">$10,000 - $25,000/mo</option>
+                            <option value="25k-50k">$25,000 - $50,000/mo</option>
+                            <option value="50k-100k">$50,000 - $100,000/mo</option>
+                            <option value="100k-plus">$100,000+/mo</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="platforms">Current Advertising Platforms</label>
+                        <input type="text" id="platforms" name="platforms" class="form-input" placeholder="e.g. Google Ads, Meta Ads, Microsoft Ads">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="goals">What are your biggest performance marketing challenges?</label>
+                        <textarea id="goals" name="goals" class="form-textarea" placeholder="Tell us about your goals, current ROAS, main pain points..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">
+                        Request Free Performance Audit
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </button>
+                    <p class="form-note">No commitment required. We will review your accounts and deliver actionable insights within 48 hours.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="footer-logo-mark">P</div>
+                        <span class="footer-logo-text">Performance Web Marketing</span>
+                    </div>
+                    <p>Data-obsessed, ROI-focused digital marketing agency. We track every dollar and measure every result so you can scale with confidence.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="LinkedIn">
+                            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814z"/><path fill="#fff" d="M9.545 15.568V8.432L15.818 12z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <a href="#services">Paid Search</a>
+                    <a href="#services">Programmatic & Display</a>
+                    <a href="#services">Shopping & Feed Mgmt</a>
+                    <a href="#services">Analytics & Attribution</a>
+                    <a href="#services">Landing Page CRO</a>
+                    <a href="#services">Full-Funnel Strategy</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <a href="#cases">Case Studies</a>
+                    <a href="#team">Our Team</a>
+                    <a href="#resources">Resources</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#faq">FAQ</a>
+                    <a href="#audit">Free Audit</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <div class="footer-contact-item">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        hello@performancewebmarketing.com
+                    </div>
+                    <div class="footer-contact-item">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        New York, NY, USA
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2026 Performance Web Marketing. All rights reserved.</span>
+                <div class="footer-legal">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="cookies.html">Cookie Policy</a>
+                    <a href="gdpr.html">GDPR</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========== SCRIPTS ========== -->
+    <script>
+        // Header scroll effect
+        const header = document.getElementById('header');
+        let lastScroll = 0;
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            if (currentScroll > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+            lastScroll = currentScroll;
+        });
+
+        // Mobile menu
+        const mobileToggle = document.getElementById('mobileToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+        mobileToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+            const spans = mobileToggle.querySelectorAll('span');
+            if (mobileMenu.classList.contains('active')) {
+                spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
+                spans[1].style.opacity = '0';
+                spans[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
+            } else {
+                spans[0].style.transform = 'none';
+                spans[1].style.opacity = '1';
+                spans[2].style.transform = 'none';
+            }
+        });
+        function closeMobile() {
+            mobileMenu.classList.remove('active');
+            const spans = mobileToggle.querySelectorAll('span');
+            spans[0].style.transform = 'none';
+            spans[1].style.opacity = '1';
+            spans[2].style.transform = 'none';
+        }
+
+        // Scroll animations
+        const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+        document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+
+        // FAQ accordion
+        document.querySelectorAll('.faq-question').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const item = btn.parentElement;
+                const isActive = item.classList.contains('active');
+                document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+                if (!isActive) item.classList.add('active');
+            });
+        });
+
+        // Counter animation
+        function animateCounters() {
+            document.querySelectorAll('.stat-number').forEach(el => {
+                const text = el.textContent;
+                const hasPlus = text.includes('+');
+                const hasDollar = text.includes('$');
+                const hasX = text.includes('x');
+                const hasM = text.includes('M');
+                let num = parseFloat(text.replace(/[^0-9.]/g, ''));
+                const isDecimal = num % 1 !== 0;
+                const duration = 2000;
+                const start = performance.now();
+                function update(now) {
+                    const elapsed = now - start;
+                    const progress = Math.min(elapsed / duration, 1);
+                    const eased = 1 - Math.pow(1 - progress, 3);
+                    let current = num * eased;
+                    let display = isDecimal ? current.toFixed(1) : Math.floor(current);
+                    let prefix = hasDollar ? '$' : '';
+                    let suffix = (hasM ? 'M' : '') + (hasX ? 'x' : '') + (hasPlus ? '+' : '');
+                    el.textContent = prefix + display + suffix;
+                    if (progress < 1) requestAnimationFrame(update);
+                }
+                requestAnimationFrame(update);
+            });
+        }
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    statsObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.3 });
+        const statsSection = document.getElementById('stats');
+        if (statsSection) statsObserver.observe(statsSection);
+
+        // Form submission
+        const auditForm = document.getElementById('auditForm');
+        if (auditForm) {
+            auditForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const btn = auditForm.querySelector('.btn-primary');
+                const originalHTML = btn.innerHTML;
+                btn.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg> Audit Requested! We\'ll be in touch within 48 hours.';
+                btn.style.background = '#059669';
+                btn.disabled = true;
+                setTimeout(() => {
+                    btn.innerHTML = originalHTML;
+                    btn.style.background = '';
+                    btn.disabled = false;
+                    auditForm.reset();
+                }, 4000);
+            });
+        }
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href === '#') return;
+                e.preventDefault();
+                const target = document.querySelector(href);
+                if (target) {
+                    const offset = 80;
+                    const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+                    window.scrollTo({ top, behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
